@@ -1,22 +1,22 @@
-/* Importing Google fonts Montserrat and Raleway */
+/* Importing Google fonts Montserrat and Raleway for headings and paragraphs respectively */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:ital,wght@0,400;1,400&display=swap');
 
 :root {
-  /* Updated color values from your new palette */
+  /* Updated color values to reflect the new color palette */
   --primary-color: #005A87;   /* Deep river blue */
   --secondary-color: #FF6700; /* Safety orange */
   --accent1-color: #F9A825;   /* Raft yellow */
   --accent2-color: #F5F5F5;   /* Calm white */
 
-  /* Updated font family variables */
+  /* Updated font family variables to use Montserrat and Raleway */
   --heading-font: 'Montserrat', sans-serif;
   --paragraph-font: 'Raleway', sans-serif;
 
-  /* Colors for specific UI elements, ensuring good contrast and readability */
-  --headline-color-on-white: #005A87;  /* headlines on a white background */ 
-  --headline-color-on-color: #F5F5F5; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #005A87; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #F5F5F5; /* paragraph text on a colored background */ 
+  /* Adjusted color variables for UI consistency and design */
+  --headline-color-on-white: #005A87;  /* Headlines on a white background */ 
+  --headline-color-on-color: #F5F5F5; /* Headlines on a colored background */ 
+  --paragraph-color-on-white: #005A87; /* Paragraph text on a white background */ 
+  --paragraph-color-on-color: #F5F5F5; /* Paragraph text on a colored background */ 
   --paragraph-background-color: #005A87;
 
   --nav-link-color: #F5F5F5;
@@ -24,8 +24,6 @@
   --nav-hover-link-color: #FF6700;
   --nav-hover-background-color: #005A87;
 }
-
-
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
