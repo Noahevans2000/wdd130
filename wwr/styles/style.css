@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:ital,wght@0,400;1,400&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -16,6 +18,10 @@ nav a, #hero-msg h1, #hero-msg h4, .button-box, main section {
 /* Setting background colors */
 body {
     background-color: #F5F5F5; /* Calm white */
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -53,16 +59,42 @@ nav a:hover, .book:hover, .join:hover {
 }
 
 .home-title, h4 {
+    font-family: 'Montserrat', sans-serif;
     color: #005A87; /* Deep river blue */
+    font-size: 2em; /* Twice the default font size */
+}
+
+.book, .join {
+    font-size: 18px;
+    background-color: #FF6700; /* Safety orange */
+    color: #F5F5F5; /* Calm white for text contrast */
+    padding: 15px 30px;
+    border-radius: 5px; /* Added border-radius */
 }
 
 .msg h2, .msg p {
     color: #F5F5F5; /* Calm white for text contrast */
 }
 
+.msg p {
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
+.msg {
+    background-color: #FF6700; /* Safety orange */
+    line-height: 1.5em; /* One and a half times the normal line height */
+    padding: 35px;
+}
+
 footer a:hover {
     color: #F9A825; /* Raft yellow for hover state */
 }
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
 /* Adding widths */
 .logo {
     width: 80px;
@@ -70,14 +102,17 @@ footer a:hover {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
     width: 100%;
 }
+
 /* Remove underline from links and add underline on hover */
 nav a, .book, .join, footer a {
     text-decoration: none;
+    padding: 35px;
 }
 
 /* Add underline on hover */
@@ -88,4 +123,51 @@ footer p a:hover {
 /* Larger font size for footer text */
 footer p {
     font-size: 1.2em;
+}
+
+h2 {
+    margin: 0;
+}
+
+/* Adding padding */
+#logo_link {
+    padding-top: 5px;
+}
+
+footer {
+    padding: 25px 50px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+/* Adding margins */
+.home-title {
+    margin-top: 10px;
+}
+
+.book, .join {
+    margin-top: 50px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+footer {
+    margin-top: 200px;
+}
+
+/* Adding borders, border-radius, and box-sizing */
+.book, .join {
+    border-radius: 5px;
+}
+
+.card-img {
+    border: 10px solid #FF6700; /* Using the Safety Orange color from your palette */
+}
+
+main section img {
+    box-sizing: border-box;
 }
