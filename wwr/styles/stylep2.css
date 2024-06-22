@@ -72,29 +72,37 @@ h3 {
 }
 
 footer {
-    background-color: #005A87;
-    color: #F5F5F5;
+    background-color: #005A87; /* Deep river blue */
+    color: #F5F5F5; /* Calm white for text contrast */
+    padding: 25px 50px;
+    margin-top: 200px; 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
 }
 
-footer nav {
-    display: flex;
+footer p {
+    margin: 0;
+    font-size: 1.2em;
 }
 
-footer nav a {
-    color: #F5F5F5;
+footer a {
+    color: #F5F5F5; /* Calm white for text contrast */
     text-decoration: none;
-    padding: 10px;
+    padding: 35px;
 }
 
-footer nav a:hover {
-    color: #FF6700;
+footer a:hover {
+    color: #FF6700; /* Safety orange for hover state */
+}
+
+footer .social a {
+    margin: 0 0.5px;
+    padding: 0;
 }
 
 footer .social img {
-    width: 30px;
-    margin: 0 5px;
+    width: 50px; 
+    height: auto;
+    padding-top: 15px;
 }
