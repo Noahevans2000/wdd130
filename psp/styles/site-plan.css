@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Montserrat');
 
 :root {
-  /* Color values */
   --primary-color: #2c3e50; /* Dark Blue */
   --secondary-color: #16a085; /* Teal */
   --accent1-color: #e74c3c; /* Red */
   --accent2-color: #ecf0f1; /* Light Grey */
-
-  /* Font values */
   --heading-font: "Oswald", sans-serif;
   --paragraph-font: "Montserrat", sans-serif;
-
-  /* Colors for text and background */
   --headline-color-on-white: #2c3e50;  
   --headline-color-on-color: #ecf0f1; 
   --paragraph-color-on-white: #2c3e50; 
@@ -38,6 +33,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   padding: 1em;
   text-align: center;
   color: var(--headline-color-on-color);
@@ -47,13 +45,18 @@ header {
 .logo-container {
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+
+.logo-container img {
+  width: 80px; /* Adjust as needed */
+  height: auto;
 }
 
 header nav {
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   background-color: var(--nav-background-color);
 }
 
@@ -62,6 +65,7 @@ nav a {
   text-decoration: none;
   color: var(--nav-link-color);
   transition: color 0.3s ease, background-color 0.3s ease;
+  font-size: 0.9rem; /* Adjust as needed */
 }
 
 nav a:hover {
@@ -153,7 +157,6 @@ img {
   height: auto; 
 }
 
-
 @media only screen and (max-width: 768px) {
     body {
         padding: 2em;
@@ -167,6 +170,7 @@ img {
         padding: 1em 0;
     }
 }
+
 .testimonial-image {
   width: 50px;
   height: 50px;
@@ -174,11 +178,23 @@ img {
   margin-right: 10px;
   vertical-align: middle;
 }
+
 blockquote {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
+
 blockquote p {
   margin: 0;
 }
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--secondary-color); 
+  text-decoration: none;
+}
+
