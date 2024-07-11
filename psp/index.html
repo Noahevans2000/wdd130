@@ -21,6 +21,7 @@
         </nav>
     </header>
 
+
     <main>
         <section class="hero">
             <h1>Welcome to My Professional Portfolio</h1>
@@ -28,13 +29,14 @@
             <a href="#about" class="cta-button">Learn More About Me</a>
             <img src="images/headshot.PNG" alt="Noah Evans">
         </section>
-        
+       
         <section id="about">
             <h2>About Me</h2>
             <p>This site showcases my sales achievements and technical skills acquired through my academic and professional journey. With a solid foundation in sales and a burgeoning expertise in software engineering, I am equipped to deliver innovative solutions and drive success. Learn more about my <a href="professional_experience.html">professional experience</a> and <a href="skills_certifications.html">skills and certifications</a>.</p>
             <img src="images/byui.jpg" alt="BYU-Idaho Campus">
             <p class="colored">I am currently enrolled at Brigham Young University - Idaho, pursuing a degree in Software Engineering. My academic journey has equipped me with valuable insights into software development, problem-solving, and effective communication.</p>
         </section>        
+
 
         <section id="achievements">
             <h2>Achievements</h2>
@@ -45,24 +47,48 @@
             <p>Awarded MVP title for outstanding sales performance in multiple quarters.</p>
         </section>        
 
+
         <section id="testimonials">
             <h2>Testimonials</h2>
-            <p>What colleagues say about me.</p>
-            <blockquote>
-                <img src="images/david.jpg" alt="David Augenblick" class="testimonial-image">
-                <p>"Noah's dedication and innovative strategies have significantly improved our sales performance. His leadership and problem-solving skills are outstanding." - David Augenblick, Human Resources at Neighborhood Sun</p>
-            </blockquote>
-            <blockquote>
-                <img src="images/Jonas.jpg" alt="Jonas Gottlieb" class="testimonial-image">
-                <p>"Noah has the diligence, consistency, and tenacity that is needed by my belief in every industry. He brought great ideas to the table for every project we worked on, all of which showed his desire to work smarter, but also his willingness to work harder." - Jonas Gottlieb, Director of Inside Sales at Neighborhood Sun</p>
-            </blockquote>
-        </section>
+            <p>What colleagues say about me</p>
+            
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/david.jpg" alt="David Augenblick" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>David Augenblick</h1>
+                  <p>Human Resources at Neighborhood Sun</p>
+                  <p>"Noah's dedication and innovative strategies have significantly improved our sales performance. His leadership and problem-solving skills are outstanding."</p>
+                  <p><small>Source: <a href="https://www.linkedin.com/in/noah-evans-84a353290/recommendations" target="_blank">LinkedIn</a></small></p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/Jonas.jpg" alt="Jonas Gottlieb" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Jonas Gottlieb</h1>
+                  <p>Director of Inside Sales at Neighborhood Sun</p>
+                  <p>"Noah has the diligence, consistency, and tenacity that is needed by my belief in every industry. He brought great ideas to the table for every project we worked on, all of which showed his desire to work smarter, but also his willingness to work harder."</p>
+                  <p><small>Source: <a href="https://www.linkedin.com/in/noah-evans-84a353290/recommendations" target="_blank">LinkedIn</a></small></p>
+                </div>
+              </div>
+            </div>
+        </section>              
     </main>
+
 
     <footer>
         <p><a href="#" id="contact-link">Contact Information</a> | <a href="https://www.linkedin.com/in/noah-evans-84a353290/" target="_blank">Follow on LinkedIn</a></p>
         <a href="site-plan.html">Site Plan</a>
     </footer>
+
+
 
 
     <div id="contact-modal" class="modal">
@@ -77,6 +103,7 @@
             </ul>
         </div>
     </div>
+
 
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
