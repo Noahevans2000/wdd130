@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Montserrat');
 
 :root {
-  --primary-color: #2c3e50; /* Dark Blue */
-  --secondary-color: #16a085; /* Teal */
-  --accent1-color: #e74c3c; /* Red */
-  --accent2-color: #ecf0f1; /* Light Grey */
+  --primary-color: #2c3e50; 
+  --secondary-color: #16a085; 
+  --accent1-color: #e74c3c; 
+  --accent2-color: #ecf0f1; 
   --heading-font: "Oswald", sans-serif;
   --paragraph-font: "Montserrat", sans-serif;
   --headline-color-on-white: #2c3e50;  
@@ -49,7 +49,7 @@ header {
 }
 
 .logo-container img {
-  width: 80px; /* Adjust as needed */
+  width: 80px; 
   height: auto;
 }
 
@@ -65,7 +65,7 @@ nav a {
   text-decoration: none;
   color: var(--nav-link-color);
   transition: color 0.3s ease, background-color 0.3s ease;
-  font-size: 0.9rem; /* Adjust as needed */
+  font-size: 0.9rem; 
 }
 
 nav a:hover {
@@ -230,8 +230,8 @@ a:hover {
 }
 
 .flip-card-front {
-  background-color: var(--primary-color); /* Dark Blue */
-  color: var(--headline-color-on-color); /* Light Grey */
+  background-color: var(--primary-color); 
+  color: var(--headline-color-on-color); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -243,8 +243,8 @@ a:hover {
 }
 
 .flip-card-back {
-  background-color: var(--primary-color); /* Dark Blue */
-  color: var(--headline-color-on-color); /* Light Grey */
+  background-color: var(--primary-color); 
+  color: var(--headline-color-on-color); 
   transform: rotateY(180deg);
   padding: 10px;
   box-sizing: border-box;
@@ -256,18 +256,36 @@ a:hover {
 }
 
 .flip-card-back h1 {
-  color: var(--accent2-color); /* Light Grey */
+  color: var(--accent2-color); 
   margin: 10px 0;
   font-size: 1.2rem;
   font-family: var(--heading-font);
 }
 
 .flip-card-back p {
-  color: var(--headline-color-on-color); /* Light Grey */
+  color: var(--headline-color-on-color); 
   margin: 5px 0;
   font-size: 0.9rem;
   font-family: var(--paragraph-font);
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 50%;
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill-card {
+  border: 2px solid var(--secondary-color); 
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--accent2-color); 
+  width: 80%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
